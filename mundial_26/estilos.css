@@ -1,0 +1,209 @@
+/* Paleta de Colores Ecuador 2026 */
+:root {
+    --amarillo: #FFCC00;
+    --azul: #0033A0;
+    --rojo: #D52B1E;
+    --oscuro: #111b2d;
+    --blanco: #ffffff;
+    --gris-claro: #f4f6f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gris-claro);
+    color: var(--oscuro);
+    line-height: 1.6;
+    /* Aplicamos Roboto como fuente base para todo el texto */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+/* Encabezado Principal */
+header {
+    background: linear-gradient(135deg, var(--azul), var(--oscuro));
+    color: var(--blanco);
+    padding: 20px 0;
+    border-bottom: 5px solid var(--amarillo);
+    text-align: center;
+}
+
+header h1 {
+    /* Estilo deportivo con Teko */
+    font-family: 'Teko', sans-serif;
+    font-size: 3.5rem; /* Subimos un poco el tamaño porque Teko es más compacta */
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Navegación */
+nav {
+    background-color: var(--oscuro);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+nav a:hover, nav a.activo {
+    background-color: var(--amarillo);
+    color: var(--oscuro);
+    font-weight: bold;
+}
+
+/* Contenedor Principal */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: var(--blanco);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h2 {
+    /* Estilo deportivo con Teko */
+    font-family: 'Teko', sans-serif;
+    color: var(--azul);
+    border-left: 5px solid var(--rojo);
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+h3 {
+    /* Estilo deportivo con Teko para títulos de tarjetas */
+    font-family: 'Teko', sans-serif;
+    color: var(--oscuro);
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+/* Estilos Multimedia y Tarjetas */
+.hero-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.multimedia-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.media-box {
+    flex: 1;
+    min-width: 300px;
+    background: var(--gris-claro);
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* Estilo corregido para las imágenes dentro de las tarjetas de jugadores */
+.media-box img {
+    width: 100%;
+    height: 180px;
+    /* Ajusta la imagen entera sin recortarla */
+    object-fit: contain; 
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+video, audio {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+/* Tablas de Posiciones / Calendario */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: var(--azul);
+    color: var(--blanco);
+    letter-spacing: 0.5px;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Enlaces Externos */
+.btn-externo {
+    display: inline-block;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: transform 0.2s;
+}
+
+.btn-externo:hover {
+    transform: scale(1.05);
+    background-color: #b32015;
+}
+
+/* Pie de Página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--oscuro);
+    color: var(--blanco);
+    margin-top: 40px;
+    font-size: 0.9rem;
+    border-top: 4px solid var(--rojo);
+}
